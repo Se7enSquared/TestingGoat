@@ -50,11 +50,12 @@ class NewVisitorTest(unittest.TestCase):
         inputbox.send_keys('Use peacock feathers to make a fly')
         inputbox.send_keys(Keys.ENTER)
         time.sleep(1)
-        self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
+        self.check_for_row_in_list_table(
+            '2: Use peacock feathers to make a fly')
 
         # The page updates again and now shows both items on her list
 
-        # Will the site remember her list? She sees that the site has 
+        # Will the site remember her list? She sees that the site has
         # generated a unique url for her with some explanatory text
 
         # She visits that URL and her to-do list is still there
